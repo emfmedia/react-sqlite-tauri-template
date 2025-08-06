@@ -1,72 +1,72 @@
 # React + Tauri Template
 
-Ein modernes, hybrides Template für React-Anwendungen, das sowohl in Dyad als auch als eigenständige Tauri-Desktop-Anwendung funktioniert.
+A modern, hybrid template for React applications that works both in Dyad and as a standalone Tauri desktop application.
 
 ## ✨ Features
 
-- **Hybrid-Architektur**: Funktioniert sowohl in Dyad als auch als Tauri-App
-- **Moderne UI**: 39+ Shadcn/UI Komponenten
-- **Theme-System**: Dark/Light Mode mit next-themes
-- **State Management**: TanStack Query für Server-State
+- **Hybrid Architecture**: Works both in Dyad and as a Tauri app
+- **Modern UI**: 39+ Shadcn/UI components
+- **Theme System**: Dark/Light mode with next-themes
+- **State Management**: TanStack Query for server state
 - **Routing**: React Router v6
 - **Styling**: Tailwind CSS v3.4.11
-- **TypeScript**: Vollständige Typisierung
-- **Error Boundaries**: Robuste Fehlerbehandlung
+- **TypeScript**: Complete type safety
+- **Error Boundaries**: Robust error handling
 
-## 🚀 Verwendung
+## 🚀 Usage
 
-### In Dyad (Standard)
+### In Dyad (Default)
 ```bash
-# Das Template wird automatisch von Dyad verwendet
-# Keine zusätzliche Konfiguration erforderlich
+# The template is automatically used by Dyad
+# No additional configuration required
 ```
 
-### Als Tauri Desktop-App
+### As Tauri Desktop App
 ```bash
-# Entwicklung
+# Development
 pnpm run tauri:dev
 
-# Build für Desktop
+# Build for desktop
 pnpm run tauri:build
 ```
 
-### Als Web-App
+### As Web App
 ```bash
-# Entwicklung
+# Development
 pnpm run dev
 
 # Build
 pnpm run build
 ```
 
-## 🏗️ Projekt-Struktur
+## 🏗️ Project Structure
 
 ```
 src/
-├── components/          # UI-Komponenten
-│   ├── ui/             # Shadcn/UI Komponenten
-│   ├── layout/         # Layout-Komponenten
+├── components/          # UI components
+│   ├── ui/             # Shadcn/UI components
+│   ├── layout/         # Layout components
 │   └── ErrorBoundary.tsx
-├── pages/              # Seiten-Komponenten
-│   ├── Index.tsx       # Hauptseite
-│   └── NotFound.tsx    # 404-Seite
+├── pages/              # Page components
+│   ├── Index.tsx       # Main page
+│   └── NotFound.tsx    # 404 page
 ├── lib/                # Utilities
-├── App.tsx             # Haupt-App-Komponente
-└── main.tsx            # Entry Point
+├── App.tsx             # Main app component
+└── main.tsx            # Entry point
 ```
 
-## 🛠️ Verfügbare Scripts
+## 🛠️ Available Scripts
 
-- `pnpm run dev` - Web-Entwicklungsserver
-- `pnpm run build` - Web-Build
-- `pnpm run tauri:dev` - Tauri-Entwicklung
-- `pnpm run tauri:build` - Tauri-Desktop-Build
+- `pnpm run dev` - Web development server
+- `pnpm run build` - Web build
+- `pnpm run tauri:dev` - Tauri development
+- `pnpm run tauri:build` - Tauri desktop build
 - `pnpm run lint` - ESLint
-- `pnpm run clean` - Cache löschen
+- `pnpm run clean` - Clear cache
 
-## 🎨 UI-Komponenten
+## 🎨 UI Components
 
-Das Template enthält alle wichtigen Shadcn/UI Komponenten:
+The template includes all important Shadcn/UI components:
 
 - **Layout**: Card, Separator, Scroll Area
 - **Navigation**: Tabs, Breadcrumb, Pagination
@@ -75,60 +75,60 @@ Das Template enthält alle wichtigen Shadcn/UI Komponenten:
 - **Data Display**: Table, Avatar, Badge, Progress
 - **Overlays**: Sheet, Drawer, Hover Card, Context Menu
 
-## 🔧 Konfiguration
+## 🔧 Configuration
 
-### Umgebungserkennung
-Das Template erkennt automatisch die Laufzeitumgebung:
-- **Tauri**: Aktiviert Desktop-spezifische Features
-- **Web/Dyad**: Optimiert für Browser-Umgebung
+### Environment Detection
+The template automatically detects the runtime environment:
+- **Tauri**: Enables desktop-specific features
+- **Web/Dyad**: Optimized for browser environment
 
-### Theme-Konfiguration
+### Theme Configuration
 ```typescript
-// Automatische Erkennung des System-Themes
-// Persistierung in localStorage
-// Nahtloser Theme-Wechsel
+// Automatic system theme detection
+// Persistence in localStorage
+// Seamless theme switching
 ```
 
-### Vite-Konfiguration
-- **Flexible Ports**: Automatische Port-Auswahl für Dyad
-- **Feste Ports**: Port 1420 für Tauri
-- **Optimierte Chunks**: Bessere Performance
+### Vite Configuration
+- **Flexible Ports**: Automatic port selection for Dyad
+- **Fixed Ports**: Port 1420 for Tauri
+- **Optimized Chunks**: Better performance
 - **HMR**: Hot Module Replacement
 
 ## 📱 Responsive Design
 
-Das Template ist vollständig responsive und funktioniert auf:
-- Desktop (Tauri-App)
+The template is fully responsive and works on:
+- Desktop (Tauri app)
 - Tablets
-- Mobile Geräte
-- Verschiedene Bildschirmgrößen
+- Mobile devices
+- Various screen sizes
 
 ## 🐛 Debugging
 
-### Entwicklungstools
+### Development Tools
 - React DevTools
 - Vite HMR
-- TypeScript Fehlerprüfung
-- ESLint Integration
+- TypeScript error checking
+- ESLint integration
 
 ### Error Boundaries
-Umfassende Fehlerbehandlung auf mehreren Ebenen:
-- App-Level Error Boundary
-- Komponenten-Level Error Handling
-- Graceful Degradation
+Comprehensive error handling on multiple levels:
+- App-level error boundary
+- Component-level error handling
+- Graceful degradation
 
 ### Logging
 ```typescript
-// Automatisches Error-Logging
+// Automatic error logging
 console.error("Component error:", error);
 ```
 
-## 🔒 Sicherheit
+## 🔒 Security
 
-- CSP (Content Security Policy) für Tauri
-- Sichere externe Links
-- Input-Validierung
-- XSS-Schutz
+- CSP (Content Security Policy) for Tauri
+- Secure external links
+- Input validation
+- XSS protection
 
 ## 📦 Dependencies
 
@@ -139,7 +139,7 @@ console.error("Component error:", error);
 
 ### UI & Styling
 - Tailwind CSS 3.4.11
-- Radix UI Komponenten
+- Radix UI components
 - next-themes
 
 ### State & Routing
@@ -152,21 +152,21 @@ console.error("Component error:", error);
 
 ## 🚀 Performance
 
-- **Bundle Splitting**: Optimierte Chunk-Aufteilung
-- **Tree Shaking**: Ungenutzte Code-Eliminierung
-- **Lazy Loading**: Komponenten-basiertes Lazy Loading
-- **Caching**: Intelligente Caching-Strategien
+- **Bundle Splitting**: Optimized chunk splitting
+- **Tree Shaking**: Unused code elimination
+- **Lazy Loading**: Component-based lazy loading
+- **Caching**: Intelligent caching strategies
 
-## 🌐 Browser-Unterstützung
+## 🌐 Browser Support
 
 - Chrome 90+
 - Firefox 88+
 - Safari 14+
 - Edge 90+
 
-## 📄 Lizenz
+## 📄 License
 
-MIT License - siehe LICENSE-Datei für Details.
+MIT License - see LICENSE file for details.
 
 ---
 
